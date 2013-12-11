@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><%= title %></title>
+		<%- css('style') %>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/javascripts/jquery-1.8.3.min.js"><\/script>')</script>
+		<%- js('main') %>
+ 		<script>
+ 			App.initialize({
+ 				root: '/'
+ 			});
+ 		</script>
+	</body>
+</html>
